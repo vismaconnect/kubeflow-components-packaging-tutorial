@@ -1,5 +1,5 @@
 import kfp
-from kubeflow_demo_components import operators
+from kf_components import operators
 
 
 @kfp.dsl.pipeline(
