@@ -1,0 +1,13 @@
+name: Multiply
+description: Multiply two numbers.
+inputs:
+- {name: a}
+- {name: b}
+implementation:
+  container:
+    image: 533211398604.dkr.ecr.eu-north-1.amazonaws.com/data-science-kubeflow/demo
+    command: [
+      multiply,
+      --a, {inputValue: a},
+      --b, {inputValue: b},
+    ]
