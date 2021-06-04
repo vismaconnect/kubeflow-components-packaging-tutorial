@@ -54,7 +54,7 @@ In [`Dockerfile`](Dockerfile):
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 ```
-*A special note when using private git repositories. In this case you need to
+*A special note when using private git repositories and ssh. In this case you need to
 add
 `RUN mkdir -p -m 0600 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts` to
 `Dockerfile` and call the `pip` command with the `--mount=type=ssh` option. Subsequently, build the Docker image

@@ -5,7 +5,7 @@ inputs:
 - {name: b}
 implementation:
   container:
-    image: 533211398604.dkr.ecr.eu-north-1.amazonaws.com/data-science-kubeflow/demo
+    image: public.ecr.aws/n0r6o6x3/kubeflow-components-packaging-tutorial
     command: [
       multiply,
       --a, {inputValue: a},
