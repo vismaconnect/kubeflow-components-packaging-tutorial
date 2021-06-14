@@ -51,8 +51,8 @@ git+ssh://git@github.com/vismaconnect/kubeflow-components-packaging-tutorial.git
 ```
 In [`Dockerfile`](Dockerfile):
 ```
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+COPY requirements.txt /tmp/
+RUN pip install -r /tmp/requirements.txt
 ```
 *A special note when using private git repositories and ssh. In this case you need to
 add
