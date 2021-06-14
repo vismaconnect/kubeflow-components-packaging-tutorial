@@ -1,0 +1,13 @@
+name: Multiply
+description: Multiply two numbers.
+inputs:
+- {name: a}
+- {name: b}
+implementation:
+  container:
+    image: public.ecr.aws/n0r6o6x3/kubeflow-components-packaging-tutorial
+    command: [
+      multiply,
+      --a, {inputValue: a},
+      --b, {inputValue: b},
+    ]
